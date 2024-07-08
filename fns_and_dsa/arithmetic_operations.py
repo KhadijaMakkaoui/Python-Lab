@@ -7,9 +7,10 @@ def perform_operation(num1, num2, operation):
         case 'multiply':
             return num1 * num2
         case 'divide':
-            if num2!=0:
-                return num1 / num2
-            else:
+            if num2 == 0:
                 print("Error")
+            else:
+                return num1 / num2
+               
                 
         
