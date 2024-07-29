@@ -9,8 +9,8 @@ class BankAccount:
         if amount > 0:
             if self.account_balance >= amount:
                 self.account_balance -= amount
-            else:
-                print("Insufficient funds.")
+            # else:
+            #     print("Insufficient funds.")
                 
 
 
