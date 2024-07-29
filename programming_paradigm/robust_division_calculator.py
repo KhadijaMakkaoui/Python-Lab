@@ -4,7 +4,7 @@ def safe_divide(numerator, denominator):
    
     try:
         result= num / den
-        return str(result)
+        return str("The result of the division is "+ str(result))
     except ZeroDivisionError:
         return str("division by zero!Error: Cannot divide by zero.")
     except ValueError:
