@@ -6,6 +6,6 @@ def safe_divide(numerator, denominator):
         result= num / den
         return str("The result of the division is "+ str(result))
     except ZeroDivisionError:
-        return str("division by zero!Error: Cannot divide by zero.")
+        return str("Error: Cannot divide by zero.")
     except ValueError:
-        return str("Non numeric inputs!Error: Please enter numeric values only.")
+        return str("Error: Please enter numeric values only.")
