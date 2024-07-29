@@ -1,8 +1,9 @@
 def safe_divide(numerator, denominator):
-    num=float(numerator) 
-    den=float(denominator)
+    
    
     try:
+        num=float(numerator) 
+        den=float(denominator)
         result= num / den
         return str("The result of the division is "+ str(result))
     except ZeroDivisionError:
