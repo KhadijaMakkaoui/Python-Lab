@@ -7,10 +7,9 @@ class Calculator:
     
     @classmethod
     def multiply(cls,a,b):
-        print(cls.calculation_type)
+        print("Calculation type: {cls.calculation_type}")
         return a * b
-
-
+    
 def main():
     # Using the static method
     sum_result = Calculator.add(10, 5)
