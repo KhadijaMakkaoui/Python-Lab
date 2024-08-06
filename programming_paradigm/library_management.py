@@ -6,10 +6,12 @@ class Book:
     
 
 class Library:
+    #private
     _books=[]
 
-    def __init__(self) -> None:
-        pass
+    def __init__(self,_books):
+        self._books=_books
+
     def add_book(self,book):
         self._books.append(book)
     
