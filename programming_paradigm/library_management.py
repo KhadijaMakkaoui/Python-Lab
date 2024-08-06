@@ -6,18 +6,15 @@ class Book:
     
 
 class Library:
-    #private
-    _books=[]
-
-    def __init__(self,_books):
-        self._books=_books
+    def __init__(self):
+        self._books = []
 
     def add_book(self,book):
         self._books.append(book)
     
     def check_out_book(self, title):
         for book in self._books:
-            if book.title == title:
+            if book.title == title and book._is_check_out==False:
                 book._is_checked_out=True
     
     def return_book(self, title):
